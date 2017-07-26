@@ -1,1 +1,30 @@
 #Viewport的作用
+ios的Viewport：980px
+把整个页面渲染到viewport里，通过缩放和拖拽查看页面；
+手机浏览器默认为我们做了：
+1⃣️页面渲染在1个980px（ios）
+2⃣️缩放
+为了排版正确，虚拟1个viewport页面
+visual viewport:窗口缩放 scale 底层
+layout viewport:布局 在上 
+设计移动Web：为什么不使用默认的980px的布局viewport？
+1⃣️宽度不可控
+2⃣️页面缩小版显示，交互不友好
+3⃣️有缩放，缩放后又有滚动
+4⃣️font-size为40等于PC上12px同等无力太少，不规范
+
+Viewport  Meta标签
+<meta name="viewport" content="name=value,...">
+1⃣️width:设置布局viewport的特定值（device-width）
+2⃣️initial-scale:设置页面的初始缩放
+3⃣️minimum-scale:最少缩放
+4⃣️maxmun-scale:最大缩放
+5⃣️user-scalable:用户能否缩放
+
+
+
+
+备注：document.body.clientHeight和document.body.clientWidth获得窗口的高和宽，发现在IE8，IE9和firefox都没有问题，都能正常获得，但是在IE7下却都是为0
+解决方法如下(IE7,IE8,IE9,firefox都没问题)：
+    使用document.documentElement.clientHeight和document.documentElement.clientWidth来取得窗口的高度和宽度。
+
