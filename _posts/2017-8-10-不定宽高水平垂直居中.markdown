@@ -7,28 +7,28 @@
     <title>Flexbox布局</title>
     <style type="text/css">
         .box{
-		display:-webkit-flex;
-		position:relative;
-		width:200px;
-		height:200px;
-		background:#ccc;
+	    display:-webkit-flex;
+	    position:relative;
+	    width:200px;
+	    height:200px;
+	    background:#ccc;
 	}
 	.child{
-		position: absolute;
-		top:50%;
-		left:50%;
-		transform: translate(-50%,-50%);
-		background:#fff;
+	    position: absolute;
+	    top:50%;
+	    left:50%;
+	    transform: translate(-50%,-50%);
+	    background:#fff;
 	}
     </style>
 </head>
 <body>
-	<div class="box">
-		this is parent!
-		<div class="child">
-			child
-		</div>
+    <div class="box">
+	this is parent!
+	<div class="child">
+	    child
 	</div>
+    </div>
 </body>
 </html>
 ```
