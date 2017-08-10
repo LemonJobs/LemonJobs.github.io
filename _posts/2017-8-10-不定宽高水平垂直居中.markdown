@@ -1,6 +1,5 @@
-#不定宽高的水平居中
 ##实现代码如下
-‘
+'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,6 +31,6 @@
 	</div>
 </body>
 </html>
-’
+'
 ##效果截图
 
